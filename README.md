@@ -3,7 +3,8 @@
 ## Criar arquivo docker-compose.yml e rodar os containers
 
 
-```version: '3'
+```
+version: '3'
 
 services:
   database:
