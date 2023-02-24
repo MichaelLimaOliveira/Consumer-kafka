@@ -6,8 +6,6 @@
 version: '3'
 
 services:
-  # Application
-
   database:
     image: 'bitnami/postgresql'
     ports:
@@ -18,7 +16,7 @@ services:
       - POSTGRESQL_DATABASE=app
     volumes:
       - 'postgresql_data:/bitnami/postgresql'
-
+      
   zookeeper:
     image: confluentinc/cp-zookeeper:latest
     environment:
